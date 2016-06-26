@@ -2,5 +2,17 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/hpcosta/Docs/workspacePhD/STSModule/libs/adw.v1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/hpcosta/Docs/workspacePhD/STSModule/libs/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="/Users/hpcosta/Docs/workspacePhD/STSModule/libs/edu.mit.jwi_2.3.3.jar"/>
+	<classpathentry kind="lib" path="/Users/hpcosta/Docs/workspacePhD/STSModule/libs/jcommon-1.0.23.jar"/>
+	<classpathentry kind="lib" path="/Users/hpcosta/Docs/workspacePhD/STSModule/libs/json_simple-1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/hpcosta/Docs/workspacePhD/STSModule/libs/jsoup-1.8.1.jar"/>
+	<classpathentry kind="lib" path="/Users/hpcosta/Docs/workspacePhD/STSModule/libs/opencsv-3.3.jar"/>
+	<classpathentry kind="lib" path="/Users/hpcosta/Docs/workspacePhD/STSModule/libs/opennlp-maxent-3.0.3.jar"/>
+	<classpathentry kind="lib" path="/Users/hpcosta/Docs/workspacePhD/STSModule/libs/opennlp-tools-1.5.3.jar"/>
+	<classpathentry kind="lib" path="/Users/hpcosta/Docs/workspacePhD/STSModule/libs/opennlp-uima-1.5.3.jar"/>
+	<classpathentry kind="lib" path="/Users/hpcosta/Docs/workspacePhD/STSModule/libs/org.annolab.tt4j-1.0.15.jar"/>
+	<classpathentry kind="lib" path="/Users/hpcosta/Docs/workspacePhD/STSModule/libs/org.tartarus.snowball.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -1,0 +1,10 @@
+Treetagger home page
+1) download pclinux
+2) download tagging scripts
+3) download intall_tagger.sh
+4) create a TreeTagger folder and put the previous files there
+5) cd TreeTagger
+6) sh intall_tagger.sh
+4) command line: export PATH=/home/hpcosta/TreeTagger/cmd
+4) command line: export PATH=/home/hpcosta/TreeTagger/bin
+5) change the treetaggerpath to home/hpcosta/TreeTagger in the treetagger.properties (my project)

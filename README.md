@@ -1,7 +1,8 @@
 SemEval2015
 ===
+---> MyBabelNet
 
-CONTENTS
+TABLE OF CONTENTS
 =========================
 
 1. [Introduction](#1-introduction)
