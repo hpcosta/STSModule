@@ -27,7 +27,7 @@ STSModule (Semantic Textual Similarity Module) aims at helping users computing t
 
 
 * This package provides several abstraction methods to BabelNet.
-	*Semantic mesures for English?
+	* Semantic mesures for English?
 		* The MySemanticSimilarityMeasures class wraps all the semantic similarity measures offered by the STSModule. Within the SemanticMeasuresManager class you will find a demo() that demonstrates how you can use them. Please have a closer look at the main method located at *'src/measures/SemanticMeasuresManager'*
 			* SemanticMeasuresManager semanticSimilarity = new SemanticMeasuresManager(Constants.EN);
 			* semanticSimilarity.calculatingSemanticSimilarityScores(sentence1, sentence2);
