@@ -29,9 +29,9 @@ STSModule (Semantic Textual Similarity Module) aims at helping users computing t
 * This package provides several abstraction methods to compute the semantic similarity between sentences.
 	* The MySemanticSimilarityMeasures class wraps all the semantic similarity measures offered by the STSModule. Within the SemanticMeasuresManager class you will find a demo that demonstrates how you can use them. Please have a closer look at the main method located at *'src/measures/SemanticMeasuresManager'*
 		* SemanticMeasuresManager semanticSimilarity = new SemanticMeasuresManager(Constants.EN); // receives *the language*
-		* semanticSimilarity.calculatingSemanticSimilarityScores(sentence1, sentence2);
-		* semanticSimilarity.getSemanticSimilarityMeasures_With_Disambiguation();
-		* semanticSimilarity.getSemanticSimilarityMeasures_WITHOUT_Disambiguation();
+		* semanticSimilarity.calculatingSemanticSimilarityScores(sentence1, sentence2); // computes the similarity between two sentences
+		* semanticSimilarity.getSemanticSimilarityMeasures_With_Disambiguation(); // returns various semantic similarity measures 
+		* semanticSimilarity.getSemanticSimilarityMeasures_WITHOUT_Disambiguation(); // returns various semantic similarity measures 
 
 * Apart from that this program also includes several abstraction methods to perform various NLP tasks, such as: POS Tagging (TreeTagger); Lemmatisation (TreeTagger); Stemming (Snowball); Tokenisation (OpenNLP); Sentence Delimitation (OpenNLP); NER (OpenNLP); and Stopword Checker. Hereafter we describe how these methods can be called.
 	* NLPManager nlpManager = new NLPManager(Constants.EN); // receives *the language*
@@ -57,14 +57,14 @@ STSModule (Semantic Textual Similarity Module) aims at helping users computing t
 			* wordnet.wordnetData3.0= path to: /externalResources/adwResources/WordNet-3.0/dict
 			* stopwords.FilePrefix = path to: /externalResources/adwResources/jlt/stopwords/stopwords
 			* stanford.pos.model= path to: /externalResources/adwResources/jlt/stanford/left3words-wsj-0-18.tagger
-		* apart from that, the folder 'config' also contains a configuration file for the TreeTagger. You will need have the TreeTagger intalled in your computer an configure the treetagger.properties file.
+		* apart from that, the folder 'config' also contains a configuration file for the TreeTagger. You will need have the TreeTagger installed in your computer an configure the treetagger.properties file.
 
 3. Create a folder named 'externalResources', for example in your workspace.
 	* this folder should contain the semantic signatures for the Semantic Similarity Measures
 
 	* please download the Semantic signatures through the following url: http://lcl.uniroma1.it/adw/ppvs.30g.5k.tar.bz2.
 
-	* for more information about the resuirement, please visit http://lcl.uniroma1.it/adw/ 
+	* for more information about the requirements visit http://lcl.uniroma1.it/adw/ 
 
 
 
@@ -72,12 +72,12 @@ STSModule (Semantic Textual Similarity Module) aims at helping users computing t
 
 ## 3.1 External Libraries 
 
-This section is important to let you know what libraries are used in this project, as weel as to know how to update the resources or models.
+This section is important to let you know what libraries are used in this project, as well as to know how to update the resources or models.
 
 #### 3.1.1 Semantic Similarity Libraries
 	* ADW - Semantic Similarity Library
 		* adw.v1.0, read: ADW-README.txt
-		* This package provides an implementation of Align, Disambiguate, and Walk (ADW). ADW is a WordNet-based approach for measuring semantic similarity of arbitrary pairs of lexical items, from word senses to full texts. The approach leverages random walks on semantic networks for modeling lexical items.
+		* This package provides an implementation of Align, Disambiguate, and Walk (ADW). ADW is a WordNet-based approach for measuring semantic similarity of arbitrary pairs of lexical items, from word senses to full texts. The approach leverages random walks on semantic networks for modelling lexical items.
 
 #### 3.1.2 NLP libraries
 	* TreeTagger
@@ -112,7 +112,7 @@ This section is important to let you know what libraries are used in this projec
 				* Organization name finder model, trained on conll02 shared task data.	
 				* Person name finder model, trained on conll02 shared task data.	
 				* Misc name finder model, trained on conll02 shared task data.
-			* the English and Spanish models are loaded by the 'NEREnModelsLoader' and 'NEREsModelsLoader' classes, respectivly.
+			* the English and Spanish models are loaded by the 'NEREnModelsLoader' and 'NEREsModelsLoader' classes, respectively.
 
 
 
