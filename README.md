@@ -26,15 +26,16 @@ STSModule (Semantic Textual Similarity Module) aims at helping users computing t
 
 
 
-* This package provides several abstraction methods to BabelNet.
-	* Semantic mesures for English?
-		* The MySemanticSimilarityMeasures class wraps all the semantic similarity measures offered by the STSModule. Within the SemanticMeasuresManager class you will find a demo() that demonstrates how you can use them. Please have a closer look at the main method located at *'src/measures/SemanticMeasuresManager'*
-			* SemanticMeasuresManager semanticSimilarity = new SemanticMeasuresManager(Constants.EN);
-			* semanticSimilarity.calculatingSemanticSimilarityScores(sentence1, sentence2);
+* This package provides several abstraction methods to compute the semantic similarity between sentences.
+	* The MySemanticSimilarityMeasures class wraps all the semantic similarity measures offered by the STSModule. Within the SemanticMeasuresManager class you will find a demo that demonstrates how you can use them. Please have a closer look at the main method located at *'src/measures/SemanticMeasuresManager'*
+		* SemanticMeasuresManager semanticSimilarity = new SemanticMeasuresManager(Constants.EN); // receives *the language*
+		* semanticSimilarity.calculatingSemanticSimilarityScores(sentence1, sentence2);
+		* semanticSimilarity.getSemanticSimilarityMeasures_With_Disambiguation();
+		* semanticSimilarity.getSemanticSimilarityMeasures_WITHOUT_Disambiguation();
 
 * Apart from that this program also includes several abstraction methods to perform various NLP tasks, such as: POS Tagging (TreeTagger); Lemmatisation (TreeTagger); Stemming (Snowball); Tokenisation (OpenNLP); Sentence Delimitation (OpenNLP); NER (OpenNLP); and Stopword Checker. Hereafter we describe how these methods can be called.
 	* NLPManager nlpManager = new NLPManager(Constants.EN); // receives *the language*
-	* The NLPManager class wraps all the NLP methods offered by the PreProcessor. Within this class you will find a demo() that demonstrates how you can use all these methods for various languages. Please have a closer look at the demo() method located at *'src/nlp/NLPManager'*
+	* The NLPManager class wraps all the NLP methods offered by the PreProcessor (http://github.com/hpcosta/PreProcessor). Within this class you will find a demo() that demonstrates how you can use all these methods for various languages. Please have a closer look at the demo() method located at *'src/nlp/NLPManager'*
 
 
 3. INSTALATION
@@ -42,13 +43,13 @@ STSModule (Semantic Textual Similarity Module) aims at helping users computing t
 
 1. Import the project to your Java editor.
 
-2. Copy the folder 'config' and 'resources' to the root of your project (it should be at the same level as the src folder).
+2. Copy the folder 'config' and 'internalResources' to the root of your project (it should be at the same level as the src folder).
 	* The folder 'internalResources' contains models for the:
 		* TreeTagger (English, French, German, Italian, Portuguese and Spanish)
 		* OpenNLP (tokeniser, sentence splitter and NER - only for English)
 		* Stopword files (German, English, Italian, Portuguese and Spanish)
 
-	* the folder 'config' contains configuration files for the Semantic Similarity Measures. You need to configure the folowing files and parameters, see step 3 first:
+	* the folder 'config' contains configuration files for the Semantic Similarity Measures. You need to configure the folowing files and parameters (see step 3 first).
 		* adw.properties 
 			* wn30g.ppv.path= path to: /externalResources/adwResources/ppvs.30g.5k/
 			* offset.map.file= path to: /externalResources/adwResources/offset2ID.map.tsv	
@@ -58,16 +59,12 @@ STSModule (Semantic Textual Similarity Module) aims at helping users computing t
 			* stanford.pos.model= path to: /externalResources/adwResources/jlt/stanford/left3words-wsj-0-18.tagger
 		* apart from that, the folder 'config' also contains a configuration file for the TreeTagger. You will need have the TreeTagger intalled in your computer an configure the treetagger.properties file.
 
-3. Copy the folder 'externalResources' to your workspace (it should be at the same level as your project is).
-	* this folder contains semantic signatures for the Semantic Similarity Measures
+3. Create a folder named 'externalResources', for example in your workspace.
+	* this folder should contain the semantic signatures for the Semantic Similarity Measures
 
-	* please check if the Semantic signatures are up-to-date through http://lcl.uniroma1.it/adw/ppvs.30g.5k.tar.bz2, if yes go to step 4.
+	* please download the Semantic signatures through the following url: http://lcl.uniroma1.it/adw/ppvs.30g.5k.tar.bz2.
 
-		* if an update is required: Extract the downloaded file into a directory of your choice, I sugest you to use: 
-			* /resources/adwResources/ (it should be at the same level as your project is)
-
-		* then, update the 'wn30g.ppv.path' entry in the 'config/adw.properties' file, with the directory containing semantic signatures.
-
+	* for more information about the resuirement, please visit http://lcl.uniroma1.it/adw/ 
 
 
 
