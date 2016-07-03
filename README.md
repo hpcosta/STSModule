@@ -17,7 +17,7 @@ TABLE OF CONTENTS
 
 1. INTRODUCTION
 =========================
-STSModule (Semantic Textual Similarity Module) aims at helping users computing the semantic similarity between sentences and documents in English. Similarity measures play an important role in a wide variety of NLP applications. By a way of example, Information Retrieval (IR) relies on semantic similarity in order to determine the best result for a related query. Semantic similarity also plays a crucial role in other applications such as Paraphrasing and Translation Memory (TM). However, computing semantic similarity between sentences and documents remains a complex and difficult task. As an attempt to fulfil this gap, STSModule aims at offering the user with a simple, yet very efficient approach to compute semantic similarity by combining semantic resources with statistical methods.
+STSModule (Semantic Textual Similarity Module) aims at helping users computing the semantic similarity between either sentences or documents in English. Similarity measures play an important role in a wide variety of NLP applications. By a way of example, Information Retrieval (IR) relies on semantic similarity in order to determine the best result for a related query. Semantic similarity also plays a crucial role in other applications such as Paraphrasing and Translation Memory (TM). However, computing semantic similarity between sentences and documents remains a complex and difficult task. As an attempt to fulfil this gap, STSModule aims at offering the user with a simple, yet very efficient approach to compute semantic similarity by combining semantic resources with statistical methods.
 
 
 
@@ -26,32 +26,11 @@ STSModule (Semantic Textual Similarity Module) aims at helping users computing t
 
 
 
-* This package provides several abstraction methods to several NLP tools, such as TreeTagger, Snowball and OpenNLP and several semantic similarity measures, which permits to do:
-	* POS Tagging (EN and ES) 
-		* @ SentenceAnalyser.getTaggedSentenceList(String rawSentence): receives a *sentence* to be tagged and returns a *list with tags*.
-	* Lemmatisation (EN and ES)
-		* @ SentenceAnalyser.getLemmatizedSentenceList(String rawSentence): receives a *sentence* to be lemmatised and returns a *list with lemmas*. *Please make sure that you called the @ SentenceAnalyser.getTaggedSentenceList(String rawSentence) method first*.
-	* Stemming (EN and ES)
-		* @ SentenceAnalyser.getStemmedTokensList(List<String> rawTokensList): receives a *list of tokens/words* to be stemmed and returns a *stemmed list of tokens*.
-	* Check for Stopword (EN and ES)
-		* @ SentenceAnalyser.getStopwordCheckerList(List<String> rawTokensList): receives a *list of tokens/words* and returns a *boolean list with true's and false's* (true means that the token/word is a stopword).
-	* Check for Common Categories (EN and ES)
-		* @ SentenceAnalyser.getCommonCategories(String[] tokanizedSentence1, String[] tokanizedSentence2): receives *two tokenized sentences in the same language* and returns a *HashMap<String, Boolean>* (String - category; Boolean - true if the category was found in both sentences), i.e. returns the intersection of the common named entities categories extracted from the two sentences.
-			* Categories available for Spanish English: see section 2.1.1 NLP libraries.		
-	* Measure the Semantic Similarity between two sentence or even documents in english.
-		* @ SemanticMeasures(String rawSentence1, String rawSentence2, String language): receives *two lemmatised sentences in the same language* (only available for English) and returns a *HasMap<String, Double>* with the following semantic measures:
-			* Weighted Overlap // max 1; min 0
-			* Jaccard // max 1; min 0
-			* Cosine // max 1; min 0
-			* Jensen Shannon // max 0; min ?
-			* KLDivergence // max 0; min ?
-
-MyBabelNet
-
-*Semantic mesures for English?
-	* The MySemanticSimilarityMeasures class wraps all the semantic similarity measures offered by the STSModule. Within the SemanticMeasuresManager class you will find a demo() that demonstrates how you can use them. Please have a closer look at the main method located at *'src/measures/SemanticMeasuresManager'*
-		* SemanticMeasuresManager semanticSimilarity = new SemanticMeasuresManager(Constants.EN);
-		* semanticSimilarity.calculatingSemanticSimilarityScores(sentence1, sentence2);
+* This package provides several abstraction methods to BabelNet.
+	*Semantic mesures for English?
+		* The MySemanticSimilarityMeasures class wraps all the semantic similarity measures offered by the STSModule. Within the SemanticMeasuresManager class you will find a demo() that demonstrates how you can use them. Please have a closer look at the main method located at *'src/measures/SemanticMeasuresManager'*
+			* SemanticMeasuresManager semanticSimilarity = new SemanticMeasuresManager(Constants.EN);
+			* semanticSimilarity.calculatingSemanticSimilarityScores(sentence1, sentence2);
 
 * Apart from that this program also includes several abstraction methods to perform various NLP tasks, such as: POS Tagging (TreeTagger); Lemmatisation (TreeTagger); Stemming (Snowball); Tokenisation (OpenNLP); Sentence Delimitation (OpenNLP); NER (OpenNLP); and Stopword Checker. Hereafter we describe how these methods can be called.
 	* NLPManager nlpManager = new NLPManager(Constants.EN); // receives *the language*
