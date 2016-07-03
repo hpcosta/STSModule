@@ -5,7 +5,7 @@ TABLE OF CONTENTS
 =========================
 
 1. [Introduction](#1-introduction)
-2. [Technical Information](#2-tech)
+2. [Technical Information](#2-technical-information)
 3. [Installation](#3-installation)
  	- 3.1. [External Libraries](#31-external-libraries)
     - 3.1.1 [NLP libraries](#32-nlp-libraries)
