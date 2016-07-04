@@ -7,9 +7,9 @@ TABLE OF CONTENTS
 1. [Introduction](#1-introduction)
 2. [Technical Information](#2-technical-information)
 3. [Installation](#3-installation)
- 	- 3.1. [External Libraries](#3.1.-external-libraries)
-    - 3.1.1 [NLP libraries](#3.1.1.-nlp-libraries)
-    - 3.1.2 [Semantic Similarity Libraries](#3.1.2.-semantic-similarity-libraries)
+ 	- 3.1. [External Libraries](#31-external-libraries)
+    - 3.1.1 [NLP libraries](#311-nlp-libraries)
+    - 3.1.2 [Semantic Similarity Libraries](#312-semantic-similarity-libraries)
 4. [Requirements](#4-requirements)
 5. [License](#5-license)
 
