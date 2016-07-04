@@ -17,6 +17,7 @@ TABLE OF CONTENTS
 
 1. INTRODUCTION
 =========================
+
 STSModule (Semantic Textual Similarity Module) aims at helping users computing the semantic similarity between either sentences or documents in English. Similarity measures play an important role in a wide variety of NLP applications. By a way of example, Information Retrieval (IR) relies on semantic similarity in order to determine the best result for a related query. Semantic similarity also plays a crucial role in other applications such as Paraphrasing and Translation Memory (TM). However, computing semantic similarity between sentences and documents remains a complex and difficult task. As an attempt to fulfil this gap, STSModule aims at offering the user with a simple, yet very efficient approach to compute semantic similarity by combining semantic resources with statistical methods.
 
 
@@ -37,6 +38,7 @@ STSModule (Semantic Textual Similarity Module) aims at helping users computing t
 	* NLPManager nlpManager = new NLPManager(Constants.EN); // receives *the language*
 	* The NLPManager class wraps all the NLP methods offered by the PreProcessor (http://github.com/hpcosta/PreProcessor). Within this class you will find a demo() that demonstrates how you can use all these methods for various languages. Please have a closer look at the demo() method located at *'src/nlp/NLPManager'*
 
+* For more information about the program and how it can be used in a real scenario, please read "MiniExperts: An SVM approach for Measuring Semantic Textual Similarity" available through the following URL: http://alt.qcri.org/semeval2015/cdrom/pdf/SemEval017.pdf
 
 3. INSTALATION
 =========================
