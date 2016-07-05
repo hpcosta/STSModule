@@ -27,7 +27,7 @@ STSModule (Semantic Textual Similarity Module) aims at helping users computing t
 
 
 
-* This package provides several abstraction methods to compute the semantic similarity between sentences.
+* This program provides several abstraction methods to compute the semantic similarity between sentences.
 	* The MySemanticSimilarityMeasures class wraps all the semantic similarity measures offered by the STSModule. Within the SemanticMeasuresManager class you will find a demo that demonstrates how you can use them. Please have a closer look at the main method located at *'src/measures/SemanticMeasuresManager'*
 		* SemanticMeasuresManager semanticSimilarity = new SemanticMeasuresManager(Constants.EN); // receives *the language*
 		* semanticSimilarity.calculatingSemanticSimilarityScores(sentence1, sentence2); // computes the similarity between two sentences
@@ -40,12 +40,16 @@ STSModule (Semantic Textual Similarity Module) aims at helping users computing t
 
 * For more information about the program and how it can be used in a real scenario, please read "MiniExperts: An SVM approach for Measuring Semantic Textual Similarity" available through the following URL: http://alt.qcri.org/semeval2015/cdrom/pdf/SemEval017.pdf
 
+
+
+
+
 3. INSTALATION
 =========================
 
 1. Import the project to your Java editor.
 
-2. Copy the folder 'config' and 'internalResources' to the root of your project (it should be at the same level as the src folder).
+2. The folder 'config' and 'internalResources' should be at the same level as the src folder.
 	* The folder 'internalResources' contains models for the:
 		* TreeTagger (English, French, German, Italian, Portuguese and Spanish)
 		* OpenNLP (tokeniser, sentence splitter and NER - only for English)
