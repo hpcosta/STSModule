@@ -18,7 +18,7 @@ TABLE OF CONTENTS
 1. INTRODUCTION
 =========================
 
-STSModule (Semantic Textual Similarity Module) aims at helping users computing the semantic similarity between either sentences or documents in English. Similarity measures play an important role in a wide variety of NLP applications. By a way of example, Information Retrieval (IR) relies on semantic similarity in order to determine the best result for a related query. Semantic similarity also plays a crucial role in other applications such as Paraphrasing and Translation Memory (TM). However, computing semantic similarity between sentences and documents remains a complex and difficult task. As an attempt to fulfil this gap, STSModule aims at offering the user with a simple, yet very efficient approach to compute semantic similarity by combining semantic resources with statistical methods.
+STSModule (Semantic Textual Similarity Module) aims at helping users computing the semantic similarity between either sentences or documents in English. Similarity measures play an important role in a wide variety of NLP applications. By a way of example, Information Retrieval (IR) relies on semantic similarity in order to determine the best result for a related query. Semantic similarity also plays a crucial role in other applications such as Paraphrasing and Translation Memory (TM). However, computing semantic similarity between sentences and documents remains a complex and difficult task. As an attempt to fulfil this gap, STSModule aims at offering the user with a simple, yet very efficient approach to compute semantic similarity by combining various semantic resources with statistical methods.
 
 
 
@@ -53,7 +53,7 @@ STSModule (Semantic Textual Similarity Module) aims at helping users computing t
 	* The folder 'internalResources' contains models for the:
 		* TreeTagger (English, French, German, Italian, Portuguese and Spanish)
 		* OpenNLP (tokeniser, sentence splitter and NER - only for English)
-		* Stopword files (German, English, Italian, Portuguese and Spanish)
+		* Stopword Checker (German, English, Italian, Portuguese and Spanish)
 
 	* the folder 'config' contains configuration files for the Semantic Similarity Measures. You need to configure the folowing files and parameters (see step 3 first).
 		* adw.properties 
